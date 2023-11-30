@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <title>Главная</title>
+
+
+    <script src="../scripts/authorization.js"></script>
+
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../styles/index.css">
+</head>
+<body onload="onLoad()">
+    <header>
+        <div class="username">
+            <p id="username"></p>
+        </div>
+    </header>
+
+    
+
+    <!-- error label -->
+    <div class="error-container" id="error-container">
+        <div class="content">
+            <label id="error-label">ОШИБКА</label>
+        </div>
+    </div>
+    
+
+    <!-- The Modal -->
+    <div id="viewContact" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+            <form id="form-modal">
+
+            <button class="close" onclick="resetForm()" type="button"><span id="closeModal"><i class='bx bx-x'></i></span>
+            </button>
+                <div class="main-info-contact">
+                    <div class="element">
+                        <p>Фамилия</p>
+                        <input type="text" id="lastname">
+                    </div>
+                    <div class="element">
+                        <p>Имя</p>
+                        <input type="text" id="firstname">
+                    </div>
+                    <div class="element">
+                        <p>Отчество</p>
+                        <input type="text" id="fathername">
+                    </div>
+    
+                </div>
+                <div class="description-contact">
+                    <div class="element">
+                        <p>Коментарий</p>
+                        <textarea type="text" id="description" placeholder="Напишите что-нибудь..."></textarea>
+                    </div>
+                </div>
+                <div class="numbers" id="numbers">
+                    <p>Номер телефона</p>
+                    <div class="numbers-container" id="numbers-container">
+                       
+                    </div>
+                    <div class="add-number">
+                        <p  onclick="addNumberCard()" id="add-number">Добавить номер</p>
+                    </div>
+                    
+                </div>
+                <div class="form-btn-container" id="form-btn-container">
+                    
+                </div>
+            </form>
+            
+            
+            
+        </div>
+    </div> 
+
+
+    <main>
+        <div class="container">
+            <div class="left-area">
+                <div class="buttons-container">
+                    <button onclick="btncreateContact()">Создать контакт</button>
+                    <button onclick="getContacts()">Обновить</button>
+                    <button onclick="logout()">Выйти</button>
+                </div>
+            </div>
+            <div class="right-area">
+                <div class="contacts-container" id="contacts-container">
+                    
+                    
+                    
+                     
+                    <!-- contacts -->
+                </div>
+            </div> 
+        </div>
+    </main>
+
+
+
+    <!--scripts  -->
+    <script src="../scripts/main.js"></script>
+</body>
+</html>

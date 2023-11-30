@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet"> 
+    <title>Admin</title>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="../styles/admin.css">
+</head>
+<body onload="onLoad()">
+    <header>
+        <div class="username">
+            <p>Admin</p>
+        </div>
+        <button onclick="logout()">Выйти</button>
+    </header>
+
+
+    <main>
+        <div class="container">
+            <div class="min-container">
+                <p class="lables">Типы телефонов</p>
+                <div class="iternal-box" id="types-container">
+                    <div class="new-type-card">
+                        <div class="input-type">
+                            <input type="text" placeholder="Новый тип..." id="new-type-input">
+                            <div onclick="createType()">
+                                <i class='bx bx-plus' ></i>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+            </div>
+            <div class="min-container">
+                <p class="lables">Пользователи</p>
+                <div class="iternal-box" id="users-container">
+
+                    
+                </div>
+            </div>
+            <div class="min-container">
+                <p class="lables">Контакты</p>
+                <div class="iternal-box" id="contacts-container">
+                    <p>Выберите пользователя</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </main>
+    <script src="../scripts/admin.js"></script>
+</body>
+</html>

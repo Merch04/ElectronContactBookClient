@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px; 
+    font-weight: 400;
+    color: #8d939e;;
+}
+body {   
+    color: #8d939e;
+    background: #282e33;
+}
+header{
+    align-items: center;
+    display: flex;
+    gap: 30px;
+    background: #18191d;
+    padding: 25px ;   
+}
+header button{
+    width: 110px;
+    height: 30px;
+
+    background: transparent;
+    cursor: pointer;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+}
+header button:hover{
+    color: #fefefe;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+}
+
+
+.username{
+    display: flex;
+    align-items: center;
+}
+.username p{
+    font-size: 28px;
+}
+.container{
+    display: flex;
+    gap: 33px;
+    padding: 12px 47px 0 47px;
+}
+.min-container{
+    
+    width: 280px;
+    text-align: center;
+   
+}
+.min-container .lables{
+    color: #8d939e;
+    font-size: 18px;
+    margin-bottom: 13px;
+   
+}
+.iternal-box{
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    min-height: auto;
+    background: #18191d;
+    gap: 11px;
+}
+.iternal-box .type-card{
+    display: flex;
+    align-items: start;
+}
+.input-type{
+    display: flex;
+    height: 32px;
+    align-items: center;
+    justify-content: space-between;
+}
+.input-type input{
+    background: transparent;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-color: transparent;
+    outline: none;
+
+    width: 83%;
+    height: 32px;
+
+    padding-left: 10px;
+}
+.input-type i{
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    top: 5px;
+}
+.new-type-card{
+    display: flex;
+    height: 32px;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    border-bottom:2px solid rgba(255, 255, 255, 0.2); ;
+}
+.user-card{
+    cursor: pointer;
+    margin-bottom: 5px;
+    height: 32px;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+.user-card:hover{
+    border: 2px solid rgba(255, 255, 255, 0.4);
+}
+.user-card .nickname{
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.contact-card{
+    padding: 5px;
+    min-height: 32px;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+}
+.contact-card .content{
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+}
+.contact-card .content p{
+    text-align: start;
+    font-size: 14px;
+}

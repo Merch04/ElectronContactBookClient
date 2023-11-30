@@ -1,0 +1,353 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;  
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px; 
+    font-weight: 400;
+  }
+ 
+body {   
+    color: #8d939e;
+    background: #282e33;
+}
+header{
+    background: #18191d;
+    padding: 25px ;   
+}
+
+.username{
+    display: flex;
+    align-items: center;
+}
+.username p{
+    font-size: 28px;
+}
+
+.container{
+    display: flex;
+
+}
+.left-area{
+    width:255px ;
+    height: 250px;
+    top: 60px;
+    position: sticky;
+}
+.buttons-container{
+    padding: 36px;
+    gap: 18px;
+    display: flex;
+    flex-direction: column;
+}
+
+.buttons-container button{
+    border:0;
+    border-radius: 5px;
+    width: 170px;
+    height: 48px;
+    background: #18191d;
+    cursor: pointer;
+    color: #8d939e;
+}
+.buttons-container button:hover{
+
+    color: #fefefe;
+}
+
+.right-area{
+    border-radius: 5px;
+    
+    height: auto;
+    margin: 36px 0 0 0 ;
+    background: #18191d;
+    width: 735px; 
+}
+
+
+.main-info-contact{
+    margin: 0 0 0 0;
+    width: 420px;
+}
+.main-info-contact .element{
+    display: flex;
+    align-items: center;
+    font-size: 18px; 
+    display: flex;
+    padding: 0 0 7px 0;
+}
+.main-info-contact .element input{
+    color: #8d939e;
+    font-size: 16px;
+    background: transparent;
+    outline: none;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    
+    padding-left: 5px;
+    margin-left: auto;
+    width: 290px;
+    height: 32px;
+}
+
+.description-contact{
+    margin: 15px 0 0 0;
+    width: 580px;
+}
+.description-contact .element{
+    font-size: 18px; 
+    padding: 0 0 7px 0;
+}
+.description-contact .element textarea {
+    width: 500px;
+    height: 80px;
+
+    color: #8d939e;
+    font-size: 14px;
+
+    background: transparent;
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+
+    margin-top: 7px;
+    margin-left: auto;
+    
+    resize: none;
+    outline: none;
+    padding: 5px 10px 5px 10px;
+}
+
+.numbers{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+.numbers .add-number{
+    width: 140px;
+    cursor: pointer;
+    color:#8d939e;
+}
+.numbers .add-number p{
+    font-size: 14px;
+}
+.numbers .add-number:hover{
+    color: #fefefe;
+}
+
+.form-btn-container{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+.form-btn-container .action-button-form{
+    background: transparent;
+    font-size: 16px;
+    color: #8d939e;
+
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+
+    height: 40px;
+    width: 120px;
+    cursor: pointer;
+}
+.form-btn-container .action-button-form:hover{
+    color: #fefefe;
+    border: 2px solid rgba(255, 255, 255, 0.4);
+}
+.form-btn-container .action-button-form-red{
+    background: transparent;
+    font-size: 16px;
+    color: rgb(255, 98, 98);
+    border: 2px solid rgba(255, 98, 98, 0.2);
+    border-radius: 5px;
+
+    height: 40px;
+    width: 120px;
+    cursor: pointer;
+}
+.form-btn-container .action-button-form-red:hover{
+    color: rgb(253, 45, 45);
+    border: 2px solid rgba(252, 27, 27, 0.5);
+}
+
+.contacts-container{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 46px;
+
+}
+.contact-card{
+    border: 2px solid rgba(255, 255, 255, .1);
+    border-radius: 5px;
+    width: 300px;
+    
+    padding: 15px;
+    cursor: pointer;
+}
+.contact-card:hover{
+    border: 2px solid rgba(255, 255, 255, 0.4);
+    
+}
+.contact-card p{
+    font-size: 16px;
+    margin: 0 0 10px 0;
+    
+}
+.contact-numbers{
+    border-top: 2px solid rgba(255, 255, 255, .1);;
+    display: flex;
+    flex-direction: column;
+}
+.contact-numbers .one-num{
+    display: flex;
+    margin: 10px 0 0 0;
+}
+.contact-numbers .one-num-push{
+    margin-left: auto;
+}
+.contact-numbers .one-num i{
+    font-size: 12px;
+}
+.numbers-container .element{
+    position: relative;
+    margin: 0 0 5px 0;
+}
+.numbers-container .element select{
+    font-size: 16px;
+    width:150px;
+    border: none;
+    outline: none;
+    color: #8d939e;
+    appearance: none;
+    padding: 5px;
+    text-align: center;
+
+    background: transparent;
+    -webkit-appearance: none;
+}
+.numbers-container .element select option{
+    font-size: 16px;
+    background: rgb(37, 37, 37) ;
+}
+.numbers-container .element i{
+    pointer-events: none;
+    position: absolute;
+    top: 4px;
+    left:130px;
+}
+.numbers-container .element input{
+    font-size: 16px;
+    width:200px;
+    height: 32px;
+    
+    padding-left: 10px;
+    color: #8d939e;
+
+    border-radius: 5px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    background-color: transparent;
+    outline: none;
+
+}
+
+
+.no-contacts{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+ /* The Modal (background) */
+ .modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow:hidden; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.2); /* Black w/ opacity */
+  }
+  
+  /* Modal Content/Box */
+  .modal-content {
+    color: #8d939e;
+    position: relative;
+    background: transparent;
+    backdrop-filter: blur(20px);
+    margin: 15% auto; /* 15% from the top and centered */
+    padding:  40px 50px 0 50px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    height: 480px;
+    width: 660px; /* Could be more or less, depending on screen size */
+  }
+  
+  /* The Close Button */
+  .close {
+    border: 0;
+    border-radius: 0;
+    background: 0;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #bbb;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  } 
+
+
+  .error-container{
+    width: 100%;
+    opacity: 0;
+    transition: 2s;
+    position: fixed; 
+    z-index: 2; 
+    bottom: 50px;
+  }
+  .error-container .content{
+    padding: 8px;
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    border-radius: 5px;
+    margin:0 auto 0 auto;
+    width: 300px;
+    height: 40px;
+    background: transparent;
+    text-align: center;
+  }
+  .error-container-show{
+    display: block;
+    animation:showErrBlock 0.5s linear forwards ;
+    
+  }
+  @keyframes showErrBlock{
+    0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+  }
+  .error-container label{
+    color: red;
+    font-size: 16px;
+  }
+
+
